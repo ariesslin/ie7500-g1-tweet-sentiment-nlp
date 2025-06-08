@@ -1,0 +1,7 @@
+gdown
+ipykernel
+matplotlib
+numpy
+pandas
+scikit-learn
+tensorflow
