@@ -198,3 +198,7 @@ cython_debug/
 
 # folder for storing data files
 data/
+
+
+.python-version
+.virtual_documents/
