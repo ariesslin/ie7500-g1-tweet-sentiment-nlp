@@ -2,6 +2,7 @@
 
 Course project for **IE7500: Natural Language Processing**  
 Titled: **Tweets Sentiment Analysis and Classification**
+
 **Group 1:** Maryam AlBahri, Min Yao, Shan Lin
 
 ---
