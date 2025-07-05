@@ -74,9 +74,9 @@ The modeling workflow is organized as follows:
 │ ├── test_dataset.csv
 │
 ├── scripts/ # Jupyter Notebooks
-│ ├── 1. Exploratory Data Analysis (EDA).ipynb
-│ ├── 2. Data Preprocessing.ipynb
-│ ├── 3. Model_Development.ipynb
+│ ├── 1-Exploratory-Data-Analysis-EDA.ipynb
+│ ├── 2-Data-Preprocessing.ipynb
+│ ├── 3-Model-Development.ipynb
 │
 ├── utils/ # Helper functions
 │ └── helper.py
