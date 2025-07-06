@@ -198,6 +198,7 @@ cython_debug/
 
 # folder for storing data files
 data/
+processed_data/preprocessed_tweets.csv
 
 
 .clj-kondo/
