@@ -67,6 +67,7 @@ The modeling workflow is organized as follows:
 .
 ├── data/ # Raw and external data
 ├── docs/ # Project documentation
+├── models/ # Trained model files
 ├── processed_data/ # Cleaned datasets and splits
 │ ├── preprocessed_tweets.csv
 │ ├── train_dataset_comp.zip
