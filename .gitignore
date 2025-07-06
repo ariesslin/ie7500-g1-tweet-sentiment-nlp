@@ -199,7 +199,7 @@ cython_debug/
 # folder for storing data files
 data/
 processed_data/preprocessed_tweets.csv
-
+processed_data/train_dataset_comp.zip
 
 .clj-kondo/
 .virtual_documents/
