@@ -202,5 +202,25 @@ data/
 processed_data/preprocessed_tweets.csv
 #processed_data/train_dataset_comp.zip
 
+# Large model files (>10MB) - use Git LFS or cloud storage instead
+*.pt
+*.pth
+#*.keras
+*.h5
+#models/*.keras
+models/*.pt
+models/*.pth
+models/**/model.safetensors
+models/**/pytorch_model.bin
+
+# Keep small model configuration and metadata files
+!models/**/config.json
+!models/**/tokenizer_config.json
+!models/**/special_tokens_map.json
+!models/**/vocab.txt
+!models/**/tokenizer.json
+!models/**/training_args.bin
+!models/**/*.joblib
+
 .clj-kondo/
 .virtual_documents/
