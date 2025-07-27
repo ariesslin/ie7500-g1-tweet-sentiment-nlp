@@ -198,6 +198,7 @@ cython_debug/
 
 # folder for storing data files
 data/
+!data/README.md
 processed_data/preprocessed_tweets.csv
 #processed_data/train_dataset_comp.zip
 
