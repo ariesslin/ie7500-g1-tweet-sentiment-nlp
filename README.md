@@ -10,7 +10,7 @@ Titled: **Tweets Sentiment Analysis and Classification**
 ## Project Overview
 
 This project focuses on sentiment classification of tweets using both traditional and deep NLP models.  
-We apply and compare **Logistic Regression (TF-IDF)**, **LSTM**, and **BERT** on the Sentiment140 dataset to classify tweets into **positive** and **negative** sentiment categories.
+We apply and compare **Logistic Regression (TF-IDF)**, **BiLSTM**, and **DistilBERT** on the Sentiment140 dataset to classify tweets into **positive** and **negative** sentiment categories.
 
 
 ### Objectives
@@ -35,10 +35,10 @@ The modeling workflow is organized as follows:
    - Split dataset into `train`, `validation`, and `test` sets
 
 3. **Model Development**  
-   - Train and validate:  
-     - **Logistic Regression (TF-IDF baseline)**  
-     - **LSTM with embedding layer**  
-     - **BERT (transformer fine-tuning)**
+   - **3-Model-Development.ipynb**: Overview and comparison framework
+   - **3a-Logistic-Regression.ipynb**: TF-IDF + Logistic Regression baseline
+   - **3b-LSTM.ipynb**: Bidirectional LSTM with Word2Vec embeddings
+   - **3c-BERT.ipynb**: DistilBERT transformer fine-tuning
    - Evaluate on **validation set** using:
      - Accuracy, Precision, Recall, F1 Score
      - **ROC-AUC** (for final model selection)
@@ -46,7 +46,8 @@ The modeling workflow is organized as follows:
      - `"Wow this is amazing"` → Positive  
      - `"This is bad"` → Negative  
 
-4. **Final Model Selection & Retraining**  
+4. **Evaluation and Analysis**  
+   - **4-Evaluation-and-Analysis.ipynb**: Comprehensive model comparison
    - Select the model with highest ROC-AUC
    - Retrain the selected model using combined **train + validation** data
    - Evaluate final performance on **unseen test set**
@@ -68,22 +69,27 @@ The modeling workflow is organized as follows:
 ├── data/ # Raw and external data
 ├── docs/ # Project documentation
 ├── models/ # Trained model files
+│ ├── tfidf_logreg_pipeline.joblib
+│ ├── lstm_sentiment_model.keras
+│ ├── distilbert_tokenizer/
+│ └── distilbert_sentiment_final/
 ├── processed_data/ # Cleaned datasets and splits
 │ ├── preprocessed_tweets.csv
-│ ├── train_dataset_comp.zip
+│ ├── train_dataset.csv
 │ ├── val_dataset.csv
-│ ├── test_dataset.csv
-│
+│ └── test_dataset.csv
 ├── scripts/ # Jupyter Notebooks
 │ ├── 1-Exploratory-Data-Analysis-EDA.ipynb
 │ ├── 2-Data-Preprocessing.ipynb
 │ ├── 3-Model-Development.ipynb
-│
+│ ├── 3a-Logistic-Regression.ipynb
+│ ├── 3b-LSTM.ipynb
+│ ├── 3c-BERT.ipynb
+│ └── 4-Evaluation-and-Analysis.ipynb
 ├── utils/ # Helper functions
 │ └── helper.py
 ├── requirements.txt # Dependencies
 └── README.md # Project overview and guide
-
 ```
 
 ---
